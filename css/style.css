@@ -3,9 +3,11 @@ body {
 }
 
 
+
 .bg-ijo {
-    background-color: #11998E;
+    background-color: #11998e;
 }
+
 
 .bg-ijo1 {
     background-color: #38ef7d;
@@ -32,5 +34,38 @@ body {
 }
 
 .main {
-    margin-top: 100px;
+    margin-top: 30px;
+}
+
+.nav-item:hover {
+    color: rgb(8, 104, 67) !important;
+}
+
+.pangkat {
+    height: 30px;
+    width: 100px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+.nama-guru {
+    font-size: 14px;
+    color: white;
+    padding: 7px;
+}
+
+.bg-item {
+    background-color: #2D2D2D;
+}
+
+.maps {
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+footer {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
