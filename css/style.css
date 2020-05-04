@@ -100,5 +100,15 @@ footer {
 
 #DewanGuru {
     background-color: rgb(238, 255, 241);
+    padding-top: 90px;
+    padding-bottom: 80px;
+
+}
+
+#sekolah {
     padding: 20px;
+}
+
+.hoverIjo1:hover {
+    background-color: #2bc767;
 }
