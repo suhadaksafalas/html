@@ -112,3 +112,9 @@ footer {
 .hoverIjo1:hover {
     background-color: #2bc767;
 }
+
+.nav-a {
+    text-decoration: none !important;
+    color: white;
+
+}
