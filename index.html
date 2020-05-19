@@ -25,6 +25,59 @@
 </head>
 
 
+<!-- Modal login-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form action="" method="post">
+          <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup">Username</label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><span class="fa fa-user"></span></div>
+              </div>
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup">Password</label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><span class="fa fa-lock"></span></div>
+              </div>
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Password">
+            </div>
+          </div>
+
+          <div class="form-group col-auto">
+            <select id="inputState" class="form-control form-control-sm">
+              <option selected>Masuk sebagai...</option>
+              <option>Siswa</option>
+              <option>Guru</option>
+            </select>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info">Log In</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Modal login-->
 
 <body class="animated slideInDown">
 
@@ -68,7 +121,7 @@
       <div class="container">
         <div class="clearfix mt-3">
           <div class="float-left">
-            <img class="mb-2" src="assets/img/Group 15.svg" alt="i" width="450px" class="">
+            <img class="mb-2" src="assets/img/sekolah.png" alt="i" width="450px" class="">
           </div>
           <div class="float-right">
             <form class="form-inline mt-2">
@@ -100,11 +153,9 @@
           <a class="text-white nav-item nav-link mr-2" href="#"><i class="fa fa-book"></i> Artikel</a>
           <a class="text-white nav-item nav-link mr-2" href="#"><i class="fa fa-image"></i> Galeri</a>
           <a class="text-white nav-item nav-link mr-2" href="#"><i class="fa fa-users"></i> Alumni</a>
-          <a class="text-white nav-item nav-link mr-2" href="#"><i class="fa fa-info"></i> Tentang</a>
-          <a class="text-white nav-item nav-link mr-2 btn btn-sm btn-warning shadow-sm" href="daftar-onlen.html"><i
-              class="fa fa-user-plus"></i>
-            Pendaftaran
-            Online</a>
+          <button type="button" class="bagde badge-danger btn" data-toggle="modal" data-target="#exampleModal">
+            <span class="fa fa-lock"></span> Login
+          </button>
         </div>
       </div>
     </div>
@@ -152,26 +203,30 @@
   </div>
 
 
-  <div class="fitur bg-gradient shadow">
+  <div class="fitur bg-ijo shadow">
     <div class="container">
       <div class="row">
 
-        <div class="col-md-4 text-center p-2">
-
+        <div class="col-md-4 navigasi">
+          <a href="https://dapo.dikdasmen.kemdikbud.go.id/sekolah/a16ec290eafdde1a3627"
+            class="d-flex flex-row justify-content-center mt-2 mb-2 text-left text-white">
+            <div class="p-2 bd-highlight"><span class="fa fa-graduation-cap fa-3x"></span></div>
+            <div class="p-2 bd-highlight">Dapodik<br> Dasmen</div>
+          </a>
         </div>
 
-        <div class="col-md-4 text-center p-2">
-          <a href="" class="link-a text-white">
-            <i class="fa fa-graduation-cap fa-2x"></i>
+        <div class="col-md-4 navigasi">
+          <a href="" class="d-flex flex-row justify-content-center mt-2 mb-2 text-left text-white">
+            <div class="p-2 bd-highlight"><span class="fa fa-home fa-3x"></span></div>
+            <div class="p-2 bd-highlight">E-Learning <br> Sekolah</div>
           </a>
-          <h6 class="e-learning">E-Learning Sekolah</h6>
         </div>
 
-        <div class="col-md-4 text-center p-2">
-          <a href="" class="link-a text-white">
-            <i class="fa fa-user-plus fa-2x"></i>
+        <div class="col-md-4 navigasi">
+          <a href="" class="d-flex flex-row justify-content-center mt-2 mb-2 text-left text-white">
+            <div class="p-2 bd-highlight"><span class="fa fa-user-graduate fa-3x"></span></div>
+            <div class="p-2 bd-highlight">Pendaftaran <br> Online</div>
           </a>
-          <h6>Pendaftran Online</h6>
         </div>
 
       </div>
@@ -262,9 +317,9 @@
       </div>
     </div>
     <!-- dewan guru -->
-    <div class="dewan-guru mt-5" id="DewanGuru">
+    <div class="dewan-guru mt-3" id="DewanGuru">
       <div class="container">
-        <h2 class="text-center mb-3">DEWAN GURU</h2>
+        <h2 class="text-center mb-5">DEWAN GURU</h2>
         <div class="row">
           <div class="col-md-3">
             <div class="card shadow-sm mb-5">
@@ -502,7 +557,7 @@
                 <p class="m-1" style="font-size: 12px">Guru Mapel</p>
               </div>
               <div class="card-body text-center">
-                <img src="assets/img/spinner-primary.svg" alt=""
+                <img src="assets/img/avatar/avatar-5.png" alt=""
                   class="img-fluid rounded-circle shadow mt-1 border border-success" style="width: 150px;">
                 <h5 class="nama-guru bg-ijo1 mt-3 shadow-sm">Wakiatul Masruroh, S.Pd</h5>
                 <div class="">
@@ -525,9 +580,55 @@
                 <p class="m-1" style="font-size: 12px">Wali Kelas</p>
               </div>
               <div class="card-body text-center">
-                <img src="assets/img/browsers/chrome.png" alt=""
+                <img src="assets/img/avatar/avatar-3.png" alt=""
+                  class=" img-fluid rounded-circle shadow mt-1 border border-success" style="width: 150px;">
+                <h5 class="nama-guru bg-ijo1 mt-3 shadow-sm">. . . . . . .</h5>
+                <div class="">
+                  <a href=" #" class="btn btn-social-icon mr-1 btn-sm mt-1 shadow-sm btn-facebook">
+                    <i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="btn btn-social-icon mr-1 btn-sm mt-1 shadow-sm btn-twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="btn btn-social-icon mr-1 btn-sm mt-1 shadow-sm btn-instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow-sm mb-5">
+              <div class="kartu-header bg-ijo1 m-auto pangkat shadow-sm">
+                <p class="m-1" style="font-size: 12px">Guru Mapel</p>
+              </div>
+              <div class="card-body text-center">
+                <img src="assets/img/avatar/avatar-1.png" alt=""
                   class="img-fluid rounded-circle shadow mt-1 border border-success" style="width: 150px;">
-                <h5 class="nama-guru bg-ijo1 mt-3 shadow-sm">Bugs</h5>
+                <h5 class="nama-guru bg-ijo1 mt-3 shadow-sm">. . . . . . .</h5>
+                <div class="">
+                  <a href=" #" class="btn btn-social-icon mr-1 btn-sm mt-1 shadow-sm btn-facebook">
+                    <i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="btn btn-social-icon mr-1 btn-sm mt-1 shadow-sm btn-twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="btn btn-social-icon mr-1 btn-sm mt-1 shadow-sm btn-instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow-sm mb-5">
+              <div class="kartu-header bg-ijo1 m-auto pangkat shadow-sm">
+                <p class="m-1" style="font-size: 12px">Guru Mapel</p>
+              </div>
+              <div class="card-body text-center">
+                <img src="assets/img/avatar/avatar-2.png" alt=""
+                  class="img-fluid rounded-circle shadow mt-1 border border-success" style="width: 150px;">
+                <h5 class="nama-guru bg-ijo1 mt-3 shadow-sm">. . . . . . .</h5>
                 <div class="">
                   <a href=" #" class="btn btn-social-icon mr-1 btn-sm mt-1 shadow-sm btn-facebook">
                     <i class="fab fa-facebook-f"></i></a>
